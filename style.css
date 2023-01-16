@@ -1,0 +1,18 @@
+.mainDiv {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nameBox {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.titleBox {
+    font-family: 'Roboto', sans-serif;
+}
+
+.descriptionBox {
+    font-family: 'Roboto', sans-serif;
+}
