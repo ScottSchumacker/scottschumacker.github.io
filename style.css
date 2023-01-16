@@ -31,7 +31,6 @@
   }
 
 .mainDiv {
-    margin-left: 160px; /* Same as the width of the sidebar */
     padding: 0px 10px;
 }
 
@@ -53,6 +52,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.expContainer {
+    padding-top: 5%;
+    margin-left: 150px;
+}
+
 .experience {
+    font-family: 'Roboto', sans-serif;
+}
+
+.pubContainer {
+    padding-top: 2%;
+    margin-left: 150px;
+    width: 50%;
+}
+
+.pubs {
     font-family: 'Roboto', sans-serif;
 }
