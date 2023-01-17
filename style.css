@@ -1,7 +1,7 @@
 /* The sidebar menu */
 .sidenav {
     height: 100%;
-    width: 150px;
+    width: 80px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -9,6 +9,8 @@
     overflow-x: hidden;
     padding-top: 40%;
     font-family: 'Roboto', sans-serif;
+    background-color: #D2B48C;
+    border-right: 2px solid black;
   }
   
   /* The navigation menu links */
@@ -24,10 +26,12 @@
     color: #f1f1f1;
   }
   
+  /*TODO: Add reactivity to the body as well
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-  @media screen and (max-height: 450px) {
+  @media screen and (max-width: 700px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+    .mainDiv {margin-left: 80px;}
   }
 
 .mainDiv {
@@ -52,9 +56,15 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.divTitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: x-large;
+}
+
 .expContainer {
     padding-top: 5%;
-    margin-left: 150px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .experience {
@@ -63,7 +73,8 @@
 
 .pubContainer {
     padding-top: 2%;
-    margin-left: 150px;
+    margin: 0 auto;
+    text-align: center;
     width: 40%;
 }
 
