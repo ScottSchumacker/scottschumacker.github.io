@@ -1,4 +1,35 @@
 /* The sidebar menu */
+
+body {
+    background-color: #081C15;
+    cursor: pointer;
+}
+
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+.cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+}
+
 .sidenav {
     height: 100%;
     width: 80px;
@@ -9,8 +40,6 @@
     overflow-x: hidden;
     padding-top: 40%;
     font-family: 'Roboto', sans-serif;
-    background-color: #D2B48C;
-    border-right: 2px solid black;
   }
   
   /* The navigation menu links */
@@ -18,18 +47,18 @@
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: grey;
     display: block;
   }
   
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #52B788;
+    transform: translateY(-10px);
   }
   
   /*TODO: Add reactivity to the body as well
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-width: 700px) {
-    .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
     .mainDiv {margin-left: 80px;}
   }
@@ -42,42 +71,57 @@
     margin: 0 auto;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    font-size: xx-large;
+    color: white;
 }
 
 .titleBox {
     margin: 0 auto;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
+    color: #52B788;
+    margin-left: 80px;
 }
 
 .descriptionBox {
     margin: 0 auto;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-left: 80px;
 }
 
 .divTitle {
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
+    color: #52B788;
+}
+
+#expTitle:hover{
+    transform: translateY(-10px);
+}
+
+#pubTitle:hover{
+    transform: translateY(-10px);
 }
 
 .expContainer {
     padding-top: 5%;
     margin: 0 auto;
-    text-align: center;
+    margin-left: 80px;
 }
 
 .experience {
     font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 .pubContainer {
     padding-top: 2%;
     margin: 0 auto;
-    text-align: center;
     width: 40%;
+    margin-left: 80px;
 }
 
 .pubs {
     font-family: 'Roboto', sans-serif;
+    color: white;
 }

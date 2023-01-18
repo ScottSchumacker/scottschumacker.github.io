@@ -27,7 +27,7 @@
         </div>
         <div class="desContainer">
             <div class="descriptionBox">
-                <h3>R, Python, HTML, CSS, & JavaScript</h3>
+                <h3>R  Python  HTML  CSS  JavaScript</h3>
                 <br>
                 <h3><i class="fa-solid fa-location-dot"></i> Greater New York City Area</h3>
             </div>
@@ -35,7 +35,7 @@
         <!--TODO: Make Experience title a bigger font-->
         <div class="expContainer">
             <div class="experience">
-                <div class="divTitle">Experience</div>
+                <div class="divTitle" id="expTitle">Experience</div>
                 <h3>Software Engineer @ R Validation Hub</h3>
                 <p>2022 - Present</p>
                 <br>
@@ -49,12 +49,22 @@
         <!--TODO: Make Pub title a bigger font-->
         <div class="pubContainer">
             <div class="pubs">
-                <div class="divTitle">Publications</div>
+                <div class="divTitle" id="pubTitle">Publications</div>
                 <p>Schumacker, S.T., Coppage, K.R. & Enke, R.A. RNA sequencing analysis of the human retina and associated ocular tissues. Sci Data 7, 199 (2020).</p>
                 <br>
                 <p>Schumacker, S. T., Chidester, C. A., Enke, R. A. & Marcello, M. R. RNA sequencing dataset characterizing transcriptomic responses to dietary changes in Caenorhabditis elegans. Data in Brief 25, (2019).</p>
             </div>
         </div>
     </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+    <script>
+        var cursor = document.querySelector(".cursor");
+        var cursor2 = document.querySelector(".cursor2");
+        document.addEventListener("mousemove", function(e){
+            cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX +
+            "px; top: " + e.clientY + "px;";
+        })
+    </script>
 </body>
 </html>
