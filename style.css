@@ -1,5 +1,13 @@
 /* The sidebar menu */
 
+@keyframes slideIn {
+    0%{transform: translateX(-100%);}
+    25%{transform: translateX(-75%);}
+    50%{transform: translateX(-50%);}
+    75%{transform: translateX(-25%);}
+    100%{transform: translateX(0%);}
+}
+
 body {
     background-color: #081C15;
     cursor: pointer;
@@ -68,6 +76,9 @@ body {
 }
 
 .nameBox {
+    animation-name: slideIn;
+    animation-duration: .4s;
+    animation-timing-function: ease-in-out;
     margin: 0 auto;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -93,6 +104,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: x-large;
     color: #52B788;
+    width: 25%;
 }
 
 #expTitle:hover{
