@@ -8,9 +8,48 @@
     100%{transform: translateX(0%);}
 }
 
+@keyframes moveUp {
+    0%{transform: translatey(0px);}
+    25%{transform: translatey(-2px);}
+    50%{transform: translatey(-5px);}
+    75%{transform: translatey(-7px);}
+    100%{transform: translatey(-15px);}
+}
+
 body {
-    background-color: #081C15;
+    background-color: #eeeeee;
     cursor: pointer;
+}
+
+.topnav {
+    background-color: #eeeeee;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #f67290;
+    color: white;
+  }
+
+.parent {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .sidenav {
@@ -22,7 +61,7 @@ body {
     left: 0;
     overflow-x: hidden;
     padding-top: 40%;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   
   /* The navigation menu links */
@@ -30,7 +69,7 @@ body {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
-    color: grey;
+    color: #f8b195;
     display: block;
   }
   
@@ -46,69 +85,71 @@ body {
     .mainDiv {margin-left: 80px;}
   }
 
-.mainDiv {
-    padding: 0px 10px;
-}
-
 .nameBox {
-    animation-name: slideIn;
-    animation-duration: .4s;
     animation-timing-function: ease-in-out;
     margin: 0 auto;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: xx-large;
-    color: white;
+    color: black;
 }
 
 .titleBox {
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    color: #52B788;
-    margin-left: 80px;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.desContainer {
+    margin: 0 auto;
+    text-align: center;
 }
 
 .descriptionBox {
     margin: 0 auto;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-    margin-left: 80px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: black;
+    border: 1px solid #f67290;
+    width: fit-content;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #f67290;
+    box-shadow: 10px 10px #f8b195;
 }
 
 .divTitle {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
     font-size: x-large;
-    color: #52B788;
-    width: 25%;
-}
-
-#expTitle:hover{
-    transform: translateY(-10px);
-}
-
-#pubTitle:hover{
-    transform: translateY(-10px);
+    color: black;
+    width: fit-content;
+    border-bottom: 3px solid #f67290;
 }
 
 .expContainer {
-    padding-top: 5%;
     margin: 0 auto;
-    margin-left: 80px;
+    margin-top: 100px;
+    margin-left: 150px;
+    font-weight: 300;
 }
 
 .experience {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: black;
 }
 
 .pubContainer {
     padding-top: 2%;
     margin: 0 auto;
     width: 40%;
-    margin-left: 80px;
+    margin-left: 150px;
 }
 
 .pubs {
-    font-family: 'Roboto', sans-serif;
-    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: black;
 }
