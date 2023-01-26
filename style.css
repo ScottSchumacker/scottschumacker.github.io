@@ -48,6 +48,7 @@ body {
   height: 500px;
   background-color: #dc9456;
   border-radius: 200px;
+  overflow: hidden;
   animation: coffee 7s linear infinite;
 }
 
