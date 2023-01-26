@@ -42,11 +42,11 @@ body {
 .cup::before {
   content: "";
   position: absolute;
-  top: 125px;
+  top: 115px;
   left: -80px;
   width: 500px;
   height: 500px;
-  background-color: orange;
+  background-color: #dc9456;
   border-radius: 200px;
   animation: coffee 7s linear infinite;
 }
@@ -54,9 +54,9 @@ body {
 .handle {
   position: absolute;
   top: 60px;
-  left: 275px;
-  width: 70px;
-  height: 100px;
+  left: 273px;
+  width: 80px;
+  height: 125px;
   background: transparent;
   box-sizing: border-box;
   border: 7px solid black;
