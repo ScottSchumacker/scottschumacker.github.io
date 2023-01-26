@@ -21,6 +21,64 @@ body {
     cursor: pointer;
 }
 
+.container {
+    position: absolute;
+    bottom: 40%;
+    left: 70%;
+    transform: translate(-75%, -75%);
+}
+
+.cup {
+    position: absolute;
+    width: 280px;
+    height: 295px;
+    box-sizing: border-box;
+    border: 7px solid black;
+    border-radius: 10px 10px 40px 40px;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+
+.cup::before {
+  content: "";
+  position: absolute;
+  top: 125px;
+  left: -80px;
+  width: 500px;
+  height: 500px;
+  background-color: orange;
+  border-radius: 200px;
+  animation: coffee 7s linear infinite;
+}
+
+.handle {
+  position: absolute;
+  top: 60px;
+  left: 275px;
+  width: 70px;
+  height: 100px;
+  background: transparent;
+  box-sizing: border-box;
+  border: 7px solid black;
+  border-radius: 0 10px 75px 10px;
+}
+
+.dish {
+  position: absolute;
+  content: "";
+  width: 400px;
+  height: 5px;
+  background-color: black;
+  top: 290px;
+  left: -60px;
+}
+
+
+@keyframes coffee {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
 .topnav {
     background-color: #eeeeee;
     overflow: hidden;
@@ -139,43 +197,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
     color: black;
-}
-
-.scroll-downs {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  width :100px;
-  height: 100px;
-}
-.mousey {
-  width: 50px;
-  padding: 10px 15px;
-  height: 125px;
-  border: 2px solid #f67290;
-  border-radius: 40px;
-  opacity: 0.75;
-  box-sizing: content-box;
-}
-.scroller {
-  margin: 0 auto;
-  text-align: center;  
-  width: 10px;
-  height: 30px;
-  border-radius: 25%;
-  background-color: #f67290;
-  animation-name: scroll;
-  animation-duration: 3.5s;
-  animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-  animation-iteration-count: infinite;
-}
-@keyframes scroll {
-  0% { opacity: 0; }
-  10% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(15px); opacity: 0;}
 }
 
 .pubContainer {
