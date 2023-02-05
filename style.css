@@ -1,5 +1,9 @@
-/* The sidebar menu */
+/* Scott Schumacker */
+/* Style sheet for main page */
 
+/* TODO: Add reactivity to all elements */
+
+/* Animations */
 @keyframes slideIn {
     0%{transform: translateX(-100%);}
     25%{transform: translateX(-75%);}
@@ -16,11 +20,17 @@
     100%{transform: translatey(-15px);}
 }
 
+@keyframes coffee {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
 body {
     background-color: #eeeeee;
     cursor: pointer;
 }
 
+/* Animated coffee cup */
 .container {
     position: absolute;
     bottom: 40%;
@@ -74,12 +84,7 @@ body {
   left: -60px;
 }
 
-
-@keyframes coffee {
-  0% {transform: rotate(0);}
-  100% {transform: rotate(360deg);}
-}
-
+/* Navigation bar */
 .topnav {
     background-color: #eeeeee;
     overflow: hidden;
@@ -137,7 +142,6 @@ body {
     transform: translateY(-10px);
   }
   
-  /*TODO: Add reactivity to the body as well
   /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
   @media screen and (max-width: 700px) {
     .sidenav a {font-size: 18px;}
@@ -215,6 +219,34 @@ body {
 
 .secondDiv {
     width: 100%;
-    height: 500px;
+    height: 350px;
     background-color: #dddddd;
+}
+
+.thirdDiv {
+  width: 100%;
+  height: 350px;
+  background-color: #eeeeee;
+}
+
+.aboutInfo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.divTitle2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: x-large;
+  color: black;
+  width: fit-content;
+  border-bottom: 3px solid #f67290;
+}
+
+.aboutMe {
+  padding-top: 2%;
+  margin: 0 auto;
+  width: 40%;
+  margin-left: 150px;
 }
